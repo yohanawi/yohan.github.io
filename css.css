@@ -488,7 +488,6 @@ section .title::after{
 .contact .contact-content .info .sub-title{
     color: #333;
 }
-
 /*social*/
 .contact .brow {
 	text-align: center;
@@ -519,7 +518,6 @@ section .title::after{
 .contact .right a:hover{
 	color: crimson;
 }
-
 
 /* footer section styling */
 footer{
