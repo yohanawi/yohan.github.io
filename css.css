@@ -489,14 +489,6 @@ section .title::after{
     color: #333;
 }
 
-.contact .right a{
-	color: #000000;
-    text-decoration: none;
-}
-.contact .right a:hover{
-	color: crimson;
-}
-
 /*social*/
 .contact .brow {
 	text-align: center;
@@ -519,6 +511,15 @@ section .title::after{
 .contact .brow .social i:hover{
   background: #f12020;
 }
+
+.contact .right a{
+	color: #000000;
+    text-decoration: none;
+}
+.contact .right a:hover{
+	color: crimson;
+}
+
 
 /* footer section styling */
 footer{
