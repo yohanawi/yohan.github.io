@@ -496,6 +496,30 @@ section .title::after{
 .contact .right a:hover{
 	color: crimson;
 }
+
+/*social*/
+.contact .brow {
+	text-align: center;
+}
+.contact .brow .social{
+  margin: 20px 0 0 0;
+}
+.contact .brow a{
+	color: #000000;
+}
+.contact  .brow .social i{
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.contact .brow .social i:hover{
+  background: #f12020;
+}
+
 /* footer section styling */
 footer{
     background: #111;
