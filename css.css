@@ -489,7 +489,7 @@ section .title::after{
     color: #333;
 }
 /*social*/
-.contact .brow {
+.contact .brow .social{
 	text-align: center;
 }
 .contact .brow .social{
