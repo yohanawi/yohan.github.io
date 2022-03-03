@@ -303,9 +303,64 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 
+/* education section styling */
+.education .title::after{
+	content: "what i know";
+}
+.grid {
+    display: grid;
+    width: (50% - 30px);
+    grid-gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    align-items: start;
+}
+.grid-item {
+    background-color: #222;
+    overflow: hidden;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    transition: all 0.3s ease;
+}
+.grid-item:hover {
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+    background: crimson;
+}
+.card-img {
+	align-items: center;
+    width: 30%;
+    object-fit: cover;
+}
+.card-header {
+    font-size: 35px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.card-text {
+     font-size: 25px;
+     letter-spacing: 0.1rem;
+     line-height: 1.2;
+     color: #fff;
+     margin-bottom: 5px;
+}
+
 /* skills section styling */
 
+.skills {
+    color:#fff;
+    background: #111;
+}
+.skills .title::before,
+.skills .title::before{
+    background: #fff;
+}
+.skills.title::after,
 .skills .title::after{
+    background: #111;
     content: "what i know";
 }
 .skills .skills-content .column{
