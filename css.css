@@ -257,23 +257,65 @@ section .title::after{
     background: none;
 }
 
+/* experince*/
+.experience{
+    color: #fff;
+    background-color: #111;
+}
+.experience .title::before{
+    background: #fff;
+}
+.experience .title::after{
+    background: #111;
+    content: "what i provide";
+}
+.ex-container {
+    border: 2px solid rgb(39, 35, 35);
+    background-color: rgb(48, 46, 46);
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0
+  }
+  .ex-container .text{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.ex-container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+.ex-container span {
+    font-size: 20px;
+    margin-right: 15px;
+  } 
+  @media (max-width: 500px) {
+    .ex-container {
+        text-align: center;
+    }
+    .ex-container img {
+        margin: auto;
+        float: none;
+        display: block;
+    }
+  }
+
 /* services section styling */
-.services, .teams{
+.services{
     color:#fff;
     background: #111;
 }
-.services .title::before,
-.teams .title::before{
+.services .title::before{
     background: #fff;
 }
-.services .title::after,
-.teams .title::after{
+.services .title::after{
     background: #111;
     content: "what i provide";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
-    background: #222;
+    background: rgb(48, 46, 46);
     text-align: center;
     border-radius: 6px;
     padding: 50px 25px;
@@ -304,6 +346,17 @@ section .title::after{
 }
 
 /* education section styling */
+.education{
+    color:#fff;
+    background: #111;
+}
+.education .title::before{
+    background: #fff;
+}
+.education .title::after{
+    background: #111;
+    content: "what i provide";
+}
 .education .title::after{
 	content: "what i know";
 }
@@ -341,7 +394,7 @@ section .title::after{
     margin-bottom: 20px;
 }
 .card-text {
-     font-size: 25px;
+     font-size: 20px;
      letter-spacing: 0.1rem;
      line-height: 1.2;
      color: #fff;
@@ -351,16 +404,16 @@ section .title::after{
 /* skills section styling */
 
 .skills {
-    color:#fff;
-    background: #111;
+    color:#111;
+    background: #fff;
 }
 .skills .title::before,
 .skills .title::before{
-    background: #fff;
+    background: #111;
 }
 .skills.title::after,
 .skills .title::after{
-    background: #111;
+    background: #fff;
     content: "what i know";
 }
 .skills .skills-content .column{
@@ -433,47 +486,59 @@ section .title::after{
     width: 50%;
 }
 
-/* teams section styling */
-.teams .title::after{
+/* works section styling */
+
+.works{
+    color:#111;
+    background: #fff;
+}
+.works .title::before{
+    background: #111;
+}
+.works .title::after{
+    background: #fff;
+    content: "what i provide";
+}
+.works .title::after{
     content: "my example";
 }
-.teams .carousel .card{
-    background: #222;
+.works .carousel .card{
+    background: rgb(202, 199, 199);
     border-radius: 6px;
-    padding: 25px 35px;
+    padding: 25px 15px;
     text-align: center;
     overflow: hidden;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover{
+.works .carousel .card:hover{
     background: crimson;
 }
-.teams .carousel .card .box{
+.works .carousel .card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover .box{
+.works .carousel .card:hover .box{
     transform: scale(1.05);
 }
-.teams .carousel .card .text{
+.works .carousel .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.teams .carousel .card img{
+.works .carousel .card img{
     height: 275px;
     width: 500px;
     object-fit: cover;
     border: 5px solid crimson;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover img{
+.works .carousel .card:hover img{
     border-color: #fff;
 }
-.teams .carousel .card video{
+.works .carousel .card video{
 	width: 500px;
 	object-fit: cover;
     border: 5px solid crimson;
